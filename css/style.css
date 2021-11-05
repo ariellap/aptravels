@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    position: relative;
+}
+
+body{
+    background-color:#B0C7BD; 
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2em;
+    line-height: 1;
+    padding: 50px 0;
+    font-family: Century Gothic, sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    padding: 10px 0;
+    line-height: 1.5;
+    font-family: Century-Gothic, sans-serif;
+    text-align: center;
+}
+
+h3{
+    padding: 10px;
+}
+
+.nav_item a{
+    /* display: grid; */
+    text-decoration: none;
+}
+
+.navigation{
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 3px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.nav_item{
+    display: inline;
+    padding-right: 20px;
+    width: 10em;
+}
+
+nav{
+    background-color: #ddd;
+    color: #544E61;
+    padding: 25px 10px;
+    text-align: left;
+    font-family: Cambria, serif;
+}
+
+.nav_item a:visited{
+    color: #544E61;
+}
+
+.nav_item:hover, .nav_item:focus, .nav_item:active{
+    text-transform: uppercase;
+    background-color: #C1AAC0;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.current{
+    text-transform: uppercase;
+    background-color: #C1AAC0;
+    padding: 5px;
+
+}
+
+header p{
+    color: white;
+    font-size: 24px;
+    padding: 0 100px;
+    text-align: center;
+}
+
+/* nav:focus{
+    text-transform: uppercase;
+    border: 2px solid black;
+
+} */
+
+p{
+    padding: 10px;
+    text-align: center;
+}
+
+.caption{
+    font-size:0.8em;
+}
+
+img{
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+
+}
+
+.aus-image img{
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.eurogrid{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+}
+
+footer{
+    background-color: #ddd;
+    color: #544E61;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    /* next lines added to keep footer position at the bottom of the viewport */
+    bottom: 0;
+    position: inherit; /*not sure if this is right */
+    width: 100%; 
+}
+
+
+.skip a{
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+}
+
+.skip a:focus{
+    top: 0;
+}
+
+/* for reduced motion */
+@media screen and (prefers-reduced-motion: reduce) {
+    /* turn off scroll */
+    html{
+        scroll-behavior: auto;
+    }
+
+    /* turns off transition */
+
+    /* .skip a{
+        -webkit-transition: initial;
+        transition: initial;
+    } */
+
+    /* header{
+        background-attachment: initial;
+    } */ 
+    /* turns off parallax image, hasn't been setup yet so it's not linked to header  */
+
+}
