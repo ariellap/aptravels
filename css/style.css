@@ -54,17 +54,17 @@ h3{
 
 nav{
     background-color: #ddd;
-    color: #544E61;
+    color: #33313A;
     padding: 25px 10px;
     text-align: left;
     font-family: Cambria, serif;
 }
 
 .nav_item a{
-    color: #544E61;
+    color: #33313A;
 }
 .nav_item a:visited{
-    color: #544E61;
+    color: #33313A;
 }
 
 .nav_item:hover, .nav_item:focus, .nav_item:active{
@@ -127,7 +127,7 @@ img{
 
 footer{
     background-color: #ddd;
-    color: #544E61;
+    color: #33313A;
     padding-top: 30px;
     padding-bottom: 10px;
     text-align: center;
